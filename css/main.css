@@ -1846,11 +1846,14 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 }
 
 @media only screen and (max-width: 600px) {
+  .home-social-list {
+    display: none;
+  }
   .home-content-left {
     padding: 12rem 2rem 366px;
   }
   .home-content-left h1 {
-    font-size: 3.3rem;
+    font-size: 2.8rem;
   }
 }
 .home-content-left h4 {
