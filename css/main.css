@@ -1849,6 +1849,17 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   .home-social-list {
     display: none;
   }
+  .home-scrolldown {
+    position: absolute;
+    bottom: 0;
+    right: 40%;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: right top;
+    -ms-transform-origin: right top;
+    transform-origin: right top;
+  }
   .home-content-left {
     padding: 12rem 2rem 366px;
   }
