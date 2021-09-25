@@ -1968,6 +1968,15 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   overflow: hidden;
 }
 
+#about p.lead {
+  font-family: "mtr-light", sans-serif;
+  font-size: 1.9rem;
+  line-height: 1.269;
+  color: #838383;
+  margin-bottom: 3.6rem;
+  text-align: justify;
+}
+
 .about-intro {
   padding-bottom: 3.6rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
