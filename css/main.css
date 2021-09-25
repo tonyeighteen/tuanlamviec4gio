@@ -1720,8 +1720,8 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   padding: 0;
   outline: 0;
   border: none;
-  width: 90px;
-  height: 30px;
+  width: 94px;
+  height: 34px;
   background: url("../images/logo-text.png") no-repeat center;
   background-size: 90px 30px;
   font: 0/0 a;
@@ -1891,8 +1891,8 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 @media only screen and (max-width: 768px) {
   .header-logo a {
-    width: 90px;
-    height: 30px;
+    width: 94px;
+    height: 34px;
     background-size: 90px 30px;
   }
   #header-nav-wrap {
