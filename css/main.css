@@ -1678,7 +1678,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
  *
  * ------------------------------------------------------------------- */
 
- #nav .sticky {
+#nav .sticky-nav {
    position: -webkit-sticky;
    position: sticky;
    top: 0;
