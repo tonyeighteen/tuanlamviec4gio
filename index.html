@@ -36,6 +36,9 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href='apple-touch-icon.png' rel='apple-touch-icon'/>
     <link href='favicon-512x512.png' rel='icon' sizes='512x512' type='image/png'/>
+
+    <script>window.oncontextmenu=function (){return false;};document.onkeydown=function(e){if((event.ctrlKey || event.metaKey) && event.which==85){event.preventDefault(); return false;}};</script>
+    <style>body{-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}</style>
 </head>
 
 <body id="top">
@@ -616,7 +619,7 @@
     <script>
        new universalParallax().init({speed: 1000.0});
     </script>
-    <!--<script
+    <script
         disable-devtool-auto
         md5='a2257043cf2552982e23b0233c30902d'
         src='js/disable-devtool.min.js'
@@ -637,7 +640,7 @@
             }
             setText(DisableDevtool.md5(key));
         }
-    </script>-->
+    </script>
 
 </body>
 
