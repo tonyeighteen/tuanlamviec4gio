@@ -116,7 +116,7 @@ h5, .h05, h6, .h06 {
 h1, .h01 {
   font-size: 3.1rem;
   line-height: 1.35;
-  letter-spacing: -.1rem;
+  letter-spacing: -.0rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -2444,7 +2444,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   display: inline-block;
   font-family: "mtr-regular", serif;
   font-size: 3.6rem;
-  line-height: 1;
+  line-height: 0;
   position: relative;
   top: .3rem;
 }
@@ -2454,7 +2454,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 }
 
 #testimonial-slider p::after {
-  content: '\201D';
+  content: '\201E';
 }
 
 #testimonial-slider .testimonial-author {
@@ -2604,7 +2604,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
     width: 100%;
   }
   #testimonial-slider p {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 }
 
