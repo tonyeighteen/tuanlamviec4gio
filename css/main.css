@@ -1962,9 +1962,10 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
  * ------------------------------------------------------------------- */
 
 #about {
-  min-height: 786px;
-  background: rgba(255, 255, 255, 0.95);
+  /*min-height: 786px;*/
+  background: rgba(0, 0, 0, 0.85);
   padding-top: 18rem;
+  padding-bottom: 12rem;
   overflow: hidden;
 }
 
@@ -2090,6 +2091,40 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   vertical-align: bottom;
 }
 
+#about .download-badges {
+  list-style: none;
+  margin-bottom: 3.6rem;
+  margin-left: 0;
+  text-align: center;
+}
+
+#about .download-badges li {
+  display: inline-block;
+  margin: 0 7.5px;
+  padding-left: 0;
+}
+
+#about .download-badges li a {
+  display: block;
+  width: 230px;
+  height: 71px;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 230px 71px;
+}
+
+#about .download-badges li a.badge-appstore {
+  background-image: url("../images/appstore.png");
+}
+
+#about .download-badges li a.badge-googleplay {
+  background-image: url("../images/google-play.png");
+}
+
+
 
 /* -------------------------------------------------------------------
  * responsive:
@@ -2168,6 +2203,11 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
     top: -9px;
     left: 7.5px;
   }
+  #about .download-badges li a {
+    width: 162px;
+    height: 50px;
+    background-size: 162px 50px;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -2207,6 +2247,798 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   }
 }
 
+
+
+/* ===================================================================
+ *  11.1. stepone - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+
+#stepone {
+  background: rgba(255, 255, 255, 0.95);
+  padding-top: 12rem;
+  padding-bottom: 0rem;
+  overflow: hidden;
+}
+
+#stepone .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#stepone .flex-item {
+  flex: 1 23.5rem;
+}
+
+#stepone .flex-item-2 {
+  flex-grow: 5;
+}
+
+#stepone p.lead {
+  font-family: "mtr-light", sans-serif;
+  font-size: 1.9rem;
+  line-height: 1.269;
+  color: #141515;
+  margin-bottom: 3.6rem;
+  text-align: justify;
+}
+
+.stepone-intro {
+  padding-bottom: 0.0rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+#stepone .download-badges {
+  list-style: none;
+  margin-bottom: 3.6rem;
+  margin-left: 0;
+  text-align: center;
+}
+
+#stepone .download-badges li {
+  display: inline-block;
+  margin: 0 7.5px;
+  padding-left: 0;
+}
+
+#stepone .download-badges li a {
+  display: block;
+  width: 230px;
+  height: 71px;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 230px 71px;
+}
+
+#stepone .download-badges-long {
+  list-style: none;
+  margin-bottom: 0.0rem;
+  margin-left: 0;
+  text-align: center;
+}
+
+#stepone .download-badges-long li {
+  display: inline-block;
+  margin: 0 7.5px;
+  padding-left: 0;
+}
+
+#stepone .download-badges-long li a {
+  display: block;
+  width: 409px;
+  height: 71px;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 409px 71px;
+}
+
+#stepone .download-badges li a.badge-appstore {
+  background-image: url("../images/appstore.png");
+}
+
+#stepone .download-badges li a.badge-googleplay {
+  background-image: url("../images/google-play.png");
+}
+
+
+
+/* -------------------------------------------------------------------
+ * responsive:
+ * stepone
+ * ------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1024px) {
+  .stepone-intro {
+    max-width: 800px;
+    text-align: center;
+  }
+  .stepone-intro p {
+    text-align: justify;
+  }
+  .stepone-intro h1::before {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .stepone-intro [class*="col-"] {
+    width: 100% !important;
+    float: none !important;
+    clear: both !important;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #stepone .flex-item {
+    flex: 1 0rem;
+  }
+  #stepone .flex-container {
+    flex-direction: column;
+  }
+  #stepone .flex-item-1 {
+    order: -1;
+  }
+  #stepone .flex-item-2 {
+    order: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #stepone .flex-item-1 {
+    order: -1;
+  }
+  #stepone .flex-item-2 {
+    order: 0;
+  }
+  #stepone .download-badges li a {
+    width: 162px;
+    height: 50px;
+    background-size: 162px 50px;
+  }
+  #stepone .download-badges-long li a {
+    width: 288px;
+    height: 50px;
+    background-size: 288px 50px;
+  }
+}
+
+
+/* ===================================================================
+ *  11.2. steptwo - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+
+#steptwo {
+  background: rgba(255, 255, 255, 0.95);
+  padding-top: 12rem;
+  padding-bottom: 9rem;
+  overflow: hidden;
+}
+
+#steptwo .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#steptwo .flex-item {
+  flex: 1 23.5rem;
+}
+
+#steptwo .flex-item-1 {
+  flex-grow: 5;
+}
+
+#steptwo p.lead {
+  font-family: "mtr-light", sans-serif;
+  font-size: 1.9rem;
+  line-height: 1.269;
+  color: #141515;
+  margin-bottom: 3.6rem;
+  text-align: justify;
+}
+
+.steptwo-intro {
+  padding-bottom: 3.0rem;
+  border-bottom: 0px solid rgba(0, 0, 0, 0.07);
+}
+
+#steptwo .download-badges {
+  list-style: none;
+  margin-bottom: 3.6rem;
+  margin-left: 0;
+  text-align: center;
+}
+
+#steptwo .download-badges li {
+  display: inline-block;
+  margin: 0 7.5px;
+  padding-left: 0;
+}
+
+#steptwo .download-badges li a {
+  display: block;
+  width: 230px;
+  height: 71px;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 230px 71px;
+}
+
+#steptwo .download-badges-long {
+  list-style: none;
+  margin-bottom: 3.6rem;
+  margin-left: 0;
+  text-align: center;
+}
+
+#steptwo .download-badges-long li {
+  display: inline-block;
+  margin: 0 7.5px;
+  padding-left: 0;
+}
+
+#steptwo .download-badges-long li a {
+  display: block;
+  width: 409px;
+  height: 71px;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 409px 71px;
+}
+
+#steptwo .download-badges li a.badge-appstore {
+  background-image: url("../images/appstore.png");
+}
+
+#steptwo .download-badges li a.badge-googleplay {
+  background-image: url("../images/google-play.png");
+}
+
+#steptwo .download-badges-long li a.badge-swift {
+  background-image: url("../images/badge-swift.png");
+}
+
+
+
+/* -------------------------------------------------------------------
+ * responsive:
+ * steptwo
+ * ------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1024px) {
+  .steptwo-intro {
+    max-width: 800px;
+    text-align: center;
+  }
+  .steptwo-intro p {
+    text-align: justify;
+  }
+  .steptwo-intro h1::before {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .steptwo-intro [class*="col-"] {
+    width: 100% !important;
+    float: none !important;
+    clear: both !important;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #steptwo .flex-item {
+    flex: 1 0rem;
+  }
+  #steptwo .flex-container {
+    flex-direction: column;
+  }
+  #steptwo .flex-item-1 {
+    order: 0;
+  }
+  #steptwo .flex-item-2 {
+    order: -1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #steptwo .flex-item-1 {
+    order: 0;
+  }
+  #steptwo .flex-item-2 {
+    order: -1;
+  }
+  #steptwo .download-badges li a {
+    width: 162px;
+    height: 50px;
+    background-size: 162px 50px;
+  }
+  #steptwo .download-badges-long li a {
+    width: 288px;
+    height: 50px;
+    background-size: 288px 50px;
+  }
+}
+
+
+/* ===================================================================
+ *  11.3. stepthree - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+
+#stepthree {
+  background: rgba(255, 255, 255, 0.95);
+  padding-top: 12rem;
+  padding-bottom: 9rem;
+  overflow: hidden;
+}
+
+#stepthree .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#stepthree .flex-item {
+  flex: 1 23.5rem;
+}
+
+#stepthree .flex-item-1 {
+  flex-grow: 5;
+}
+
+#stepthree p.lead {
+  font-family: "mtr-light", sans-serif;
+  font-size: 1.9rem;
+  line-height: 1.269;
+  color: #141515;
+  margin-bottom: 3.6rem;
+  text-align: justify;
+}
+
+.stepthree-intro {
+  padding-bottom: 3.0rem;
+  border-bottom: 0px solid rgba(0, 0, 0, 0.07);
+}
+
+#stepthree .download-badges {
+  list-style: none;
+  margin-bottom: 3.6rem;
+  margin-left: 0;
+  text-align: center;
+}
+
+#stepthree .download-badges li {
+  display: inline-block;
+  margin: 0 7.5px;
+  padding-left: 0;
+}
+
+#stepthree .download-badges li a {
+  display: block;
+  width: 230px;
+  height: 71px;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 230px 71px;
+}
+
+#stepthree .download-badges-long {
+  list-style: none;
+  margin-bottom: 3.6rem;
+  margin-left: 0;
+  text-align: center;
+}
+
+#stepthree .download-badges-long li {
+  display: inline-block;
+  margin: 0 7.5px;
+  padding-left: 0;
+}
+
+#stepthree .download-badges-long li a {
+  display: block;
+  width: 409px;
+  height: 71px;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 409px 71px;
+}
+
+#stepthree .download-badges li a.badge-appstore {
+  background-image: url("../images/appstore.png");
+}
+
+#stepthree .download-badges li a.badge-googleplay {
+  background-image: url("../images/google-play.png");
+}
+
+#stepthree .download-badges-long li a.badge-binance {
+  background-image: url("../images/badge-binance.png");
+}
+
+
+
+/* -------------------------------------------------------------------
+ * responsive:
+ * stepthree
+ * ------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1024px) {
+  .stepthree-intro {
+    max-width: 800px;
+    text-align: center;
+  }
+  .stepthree-intro h1::before {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .stepthree-intro [class*="col-"] {
+    width: 100% !important;
+    float: none !important;
+    clear: both !important;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #stepthree .flex-item {
+    flex: 1 0rem;
+  }
+  #stepthree .flex-container {
+    flex-direction: column;
+  }
+  #stepthree .flex-item-1 {
+    order: -1;
+  }
+  #stepthree .flex-item-2 {
+    order: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #stepthree .flex-item-1 {
+    order: -1;
+  }
+  #stepthree .flex-item-2 {
+    order: 0;
+  }
+  #stepthree .download-badges li a {
+    width: 162px;
+    height: 50px;
+    background-size: 162px 50px;
+  }
+  #stepthree .download-badges-long li a {
+    width: 288px;
+    height: 50px;
+    background-size: 288px 50px;
+  }
+}
+
+
+/* ===================================================================
+ *  11.4. stepfour - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+
+#stepfour {
+  background: rgba(255, 255, 255, 0.95);
+  padding-top: 12rem;
+  padding-bottom: 9rem;
+  overflow: hidden;
+}
+
+#stepfour .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#stepfour .flex-item {
+  flex: 1 23.5rem;
+}
+
+#stepfour .flex-item-1 {
+  flex-grow: 5;
+}
+
+#stepfour p.lead {
+  font-family: "mtr-light", sans-serif;
+  font-size: 1.9rem;
+  line-height: 1.269;
+  color: #141515;
+  margin-bottom: 3.6rem;
+  text-align: justify;
+}
+
+.stepfour-intro {
+  padding-bottom: 3.0rem;
+  border-bottom: 0px solid rgba(0, 0, 0, 0.07);
+}
+
+#stepfour .download-badges {
+  list-style: none;
+  margin-bottom: 3.6rem;
+  margin-left: 0;
+  text-align: center;
+}
+
+#stepfour .download-badges li {
+  display: inline-block;
+  margin: 0 7.5px;
+  padding-left: 0;
+}
+
+#stepfour .download-badges li a {
+  display: block;
+  width: 230px;
+  height: 71px;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 230px 71px;
+}
+
+#stepfour .download-badges-long {
+  list-style: none;
+  margin-bottom: 3.6rem;
+  margin-left: 0;
+  text-align: center;
+}
+
+#stepfour .download-badges-long li {
+  display: inline-block;
+  margin: 0 7.5px;
+  padding-left: 0;
+}
+
+#stepfour .download-badges-long li a {
+  display: block;
+  width: 409px;
+  height: 71px;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 409px 71px;
+}
+
+#stepfour .download-badges li a.badge-appstore {
+  background-image: url("../images/appstore.png");
+}
+
+#stepfour .download-badges li a.badge-googleplay {
+  background-image: url("../images/google-play.png");
+}
+
+
+/* -------------------------------------------------------------------
+ * responsive:
+ * stepfour
+ * ------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1024px) {
+  .stepfour-intro {
+    max-width: 800px;
+    text-align: center;
+  }
+  .stepfour-intro h1::before {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .stepfour-intro [class*="col-"] {
+    width: 100% !important;
+    float: none !important;
+    clear: both !important;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #stepfour .flex-item {
+    flex: 1 0rem;
+  }
+  #stepfour .flex-container {
+    flex-direction: column;
+  }
+  #stepfour .flex-item-1 {
+    order: 0;
+  }
+  #stepfour .flex-item-2 {
+    order: -1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #stepfour .flex-item-1 {
+    order: 0;
+  }
+  #stepfour .flex-item-2 {
+    order: -1;
+  }
+  #stepfour .download-badges li a {
+    width: 162px;
+    height: 50px;
+    background-size: 162px 50px;
+  }
+  #stepfour .download-badges-long li a {
+    width: 288px;
+    height: 50px;
+    background-size: 288px 50px;
+  }
+}
+
+
+/* ===================================================================
+ *  11.5. stepfive - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+
+#stepfive {
+  background: rgba(255, 255, 255, 0.95);
+  padding-top: 12rem;
+  padding-bottom: 9rem;
+  overflow: hidden;
+}
+
+#stepfive .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#stepfive .flex-item {
+  flex: 1 23.5rem;
+}
+
+#stepfive .flex-item-1 {
+  flex-grow: 5;
+}
+
+#stepfive p.lead {
+  font-family: "mtr-light", sans-serif;
+  font-size: 1.9rem;
+  line-height: 1.269;
+  color: #141515;
+  margin-bottom: 3.6rem;
+  text-align: justify;
+}
+
+.stepfive-intro {
+  padding-bottom: 3.0rem;
+  border-bottom: 0px solid rgba(0, 0, 0, 0.07);
+}
+
+#stepfive .download-badges {
+  list-style: none;
+  margin-bottom: 3.6rem;
+  margin-left: 0;
+  text-align: center;
+}
+
+#stepfive .download-badges li {
+  display: inline-block;
+  margin: 0 7.5px;
+  padding-left: 0;
+}
+
+#stepfive .download-badges li a {
+  display: block;
+  width: 230px;
+  height: 71px;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 230px 71px;
+}
+
+#stepfive .download-badges-long {
+  list-style: none;
+  margin-bottom: 3.6rem;
+  margin-left: 0;
+  text-align: center;
+}
+
+#stepfive .download-badges-long li {
+  display: inline-block;
+  margin: 0 7.5px;
+  padding-left: 0;
+}
+
+#stepfive .download-badges-long li a {
+  display: block;
+  width: 409px;
+  height: 71px;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 409px 71px;
+}
+
+#stepfive .download-badges li a.badge-appstore {
+  background-image: url("../images/appstore.png");
+}
+
+#stepfive .download-badges li a.badge-googleplay {
+  background-image: url("../images/google-play.png");
+}
+
+
+/* -------------------------------------------------------------------
+ * responsive:
+ * stepfive
+ * ------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1024px) {
+  .stepfive-intro {
+    max-width: 800px;
+    text-align: center;
+  }
+  .stepfive-intro h1::before {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .stepfive-intro [class*="col-"] {
+    width: 100% !important;
+    float: none !important;
+    clear: both !important;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #stepfive .flex-item {
+    flex: 1 0rem;
+  }
+  #stepfive .flex-container {
+    flex-direction: column;
+  }
+  #stepfive .flex-item-1 {
+    order: -1;
+  }
+  #stepfive .flex-item-2 {
+    order: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #stepfive .flex-item-1 {
+    order: -1;
+  }
+  #stepfive .flex-item-2 {
+    order: 0;
+  }
+  #stepfive .download-badges li a {
+    width: 162px;
+    height: 50px;
+    background-size: 162px 50px;
+  }
+  #stepfive .download-badges-long li a {
+    width: 288px;
+    height: 50px;
+    background-size: 288px 50px;
+  }
+}
 
 
 /* ===================================================================
