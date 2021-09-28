@@ -70,7 +70,7 @@ body {
   background: #141515;
   font-family: "mtr-regular", sans-serif;
   font-size: 1.6rem;
-  line-height: 1.875;
+  line-height: 1.5;
   color: #767676;
   margin: 0;
   padding: 0;
@@ -979,7 +979,7 @@ input::-moz-focus-inner {
 
 .pull-quote {
   position: relative;
-  padding: 2.1rem 3rem 2.1rem 0px;
+  padding: 0.0rem 5rem 4.1rem 0px;
 }
 
 .pull-quote:before,
@@ -1073,7 +1073,7 @@ input::-moz-focus-inner {
 h1.intro-header {
   font-family: "mtr-regular", sans-serif;
   font-size: 3.4rem;
-  line-height: 1.324;
+  line-height: 1.5;
   color: #151515;
   position: relative;
   padding-bottom: 3.6rem;
@@ -1889,7 +1889,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 950px) {
   .header-logo a {
     width: 94px;
     height: 34px;
@@ -1948,7 +1948,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
  * make sure the menu is visible on larger screens
  * ------------------------------------------------------------------- */
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 951px) {
   #header-nav-wrap {
     display: block !important;
   }
@@ -1969,10 +1969,22 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   overflow: hidden;
 }
 
+#about h1.intro-header {
+text-align: center;
+}
+
+#about h1::before {
+  background-color: #2a9038;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
 #about p.lead {
   font-family: "mtr-light", sans-serif;
   font-size: 1.9rem;
-  line-height: 1.269;
+  line-height: 1.5;
   color: #141515;
   margin-bottom: 3.6rem;
   text-align: justify;
@@ -2416,7 +2428,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 #steptwo {
   background: rgba(255, 255, 255, 0.95);
   padding-top: 12rem;
-  padding-bottom: 9rem;
+  padding-bottom: 0rem;
   overflow: hidden;
 }
 
@@ -2444,7 +2456,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 .steptwo-intro {
   padding-bottom: 3.0rem;
-  border-bottom: 0px solid rgba(0, 0, 0, 0.07);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
 }
 
 #steptwo .download-badges {
@@ -2579,7 +2591,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 #stepthree {
   background: rgba(255, 255, 255, 0.95);
   padding-top: 12rem;
-  padding-bottom: 9rem;
+  padding-bottom: 0rem;
   overflow: hidden;
 }
 
@@ -2592,7 +2604,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   flex: 1 23.5rem;
 }
 
-#stepthree .flex-item-1 {
+#stepthree .flex-item-2 {
   flex-grow: 5;
 }
 
@@ -2607,7 +2619,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 .stepthree-intro {
   padding-bottom: 3.0rem;
-  border-bottom: 0px solid rgba(0, 0, 0, 0.07);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
 }
 
 #stepthree .download-badges {
@@ -2637,7 +2649,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 #stepthree .download-badges-long {
   list-style: none;
-  margin-bottom: 3.6rem;
+  margin-bottom: 0.0rem;
   margin-left: 0;
   text-align: center;
 }
@@ -2683,6 +2695,9 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   .stepthree-intro {
     max-width: 800px;
     text-align: center;
+  }
+  .stepthree-intro p {
+    text-align: justify;
   }
   .stepthree-intro h1::before {
     left: 50%;
@@ -2739,7 +2754,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 #stepfour {
   background: rgba(255, 255, 255, 0.95);
   padding-top: 12rem;
-  padding-bottom: 9rem;
+  padding-bottom: 0rem;
   overflow: hidden;
 }
 
@@ -2767,7 +2782,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 .stepfour-intro {
   padding-bottom: 3.0rem;
-  border-bottom: 0px solid rgba(0, 0, 0, 0.07);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
 }
 
 #stepfour .download-badges {
@@ -2839,6 +2854,9 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
     max-width: 800px;
     text-align: center;
   }
+  .stepfour-intro p {
+    text-align: justify;
+  }
   .stepfour-intro h1::before {
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -2907,7 +2925,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   flex: 1 23.5rem;
 }
 
-#stepfive .flex-item-1 {
+#stepfive .flex-item-2 {
   flex-grow: 5;
 }
 
@@ -2993,6 +3011,9 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   .stepfive-intro {
     max-width: 800px;
     text-align: center;
+  }
+  .stepfive-intro p {
+    text-align: justify;
   }
   .stepfive-intro h1::before {
     left: 50%;
@@ -3282,13 +3303,13 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   top: .3rem;
 }
 
-#testimonial-slider p::before {
+/*#testimonial-slider p::before {
   content: '\201C';
 }
 
 #testimonial-slider p::after {
   content: '\201E';
-}
+}*/
 
 #testimonial-slider .testimonial-author {
   margin-top: 4.2rem;
@@ -3443,11 +3464,11 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 
 /* ===================================================================
- *  14. download - (_layout.scss)
+ *  14. stepsix - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
 
-#download {
+#stepsix {
   background: #39b54a;
   color: #b2fabc;
   padding-top: 12rem;
@@ -3455,11 +3476,11 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   text-align: center;
 }
 
-#download h1 {
+#stepsix h1 {
   color: #ffffff;
 }
 
-#download h1::before {
+#stepsix h1::before {
   background-color: #2a9038;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -3467,28 +3488,69 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   transform: translateX(-50%);
 }
 
-#download .lead {
+/*#stepsix .lead {
   color: #b2fabc;
+  margin-top: 4.8rem;
+}*/
+
+#stepsix p.lead {
+  font-family: "mtr-light", sans-serif;
+  font-size: 1.9rem;
+  line-height: 1.5;
+  color: #b2fabc;
+  text-align: justify;
   margin-top: 4.8rem;
 }
 
-#download .row {
+#stepsix p.lead-notop {
+  font-family: "mtr-light", sans-serif;
+  font-size: 1.9rem;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: justify;
+}
+
+#stepsix code {
+    font-family: "mtr-bold", sans-serif;
+    font-size: 1.4rem;
+    margin: 0 .2rem;
+    padding: .1rem .6rem;
+    white-space: nowrap;
+    background: #F1F1F1;
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    color: #151515;
+}
+
+#stepsix a,
+a:visited {
+  color: #ffff00;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#stepsix a:hover,
+a:focus {
+  color: #ff0000;
+}
+
+#stepsix .row {
   max-width: 800px;
 }
 
-#download .download-badges {
+#stepsix .download-badges {
   list-style: none;
   margin: 0;
   text-align: center;
 }
 
-#download .download-badges li {
+#stepsix .download-badges li {
   display: inline-block;
   margin: 0 7.5px;
   padding-left: 0;
 }
 
-#download .download-badges li a {
+#stepsix .download-badges li a {
   display: block;
   width: 230px;
   height: 71px;
@@ -3500,22 +3562,22 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   background-size: 230px 71px;
 }
 
-#download .download-badges li a.badge-appstore {
+#stepsix .download-badges li a.badge-appstore {
   background-image: url("../images/appstore.png");
 }
 
-#download .download-badges li a.badge-googleplay {
+#stepsix .download-badges li a.badge-googleplay {
   background-image: url("../images/google-play.png");
 }
 
 
 /* -------------------------------------------------------------------
  * responsive:
- * download
+ * stepsix
  * ------------------------------------------------------------------- */
 
 @media only screen and (max-width: 768px) {
-  #download .download-badges li a {
+  #stepsix .download-badges li a {
     width: 194px;
     height: 60px;
     background-size: 194px 60px;
@@ -3597,6 +3659,10 @@ footer ul a:visited {
   transition: all 0.5s ease-in-out;
 }
 
+.footer-about p {
+  text-align: justify;
+}
+
 .footer-social-list {
   font-size: 1.8rem;
   margin-top: -1.5rem;
@@ -3616,71 +3682,80 @@ footer ul a:visited {
   margin-bottom: 3rem;
 }
 
-.footer-subscribe .subscribe-form {
+.footer-feedback .feedback-form {
   margin: 0;
   padding: 0;
   position: relative;
 }
 
-.footer-subscribe #mc-form {
+.footer-feedback p {
+  margin-bottom: 0.5rem;
+}
+
+.footer-feedback #gs-form {
   width: 100%;
 }
 
-.footer-subscribe #mc-form input[type="email"] {
-  width: 100%;
-  height: 5.4rem;
-  padding: 1.2rem 100px 1.2rem 60px;
-  background: url(../images/email-icon.png) 20px center no-repeat, rgba(0, 0, 0, 0.1);
-  background-size: 24px 16px, auto;
-  margin-bottom: 1.8rem;
-  color: rgba(255, 255, 255, 0.5);
+.footer-feedback #gs-form input[type="email"] {
+  margin-bottom: .5rem;
+  color: rgba(255, 255, 255, 0.2);
 }
 
-.footer-subscribe #mc-form input[type="email"]:focus {
+.footer-feedback #gs-form input[type="email"]:focus {
   color: #ffffff;
 }
 
-.footer-subscribe #mc-form input[type=submit] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: #ffffff;
-  background: #39b54a;
-  border-color: #39b54a;
-  border-radius: 0 .5rem .5rem 0;
-  padding: 0 15px;
+.footer-feedback #gs-form input[type="text"] {
+  margin-bottom: .5rem;
+  color: rgba(255, 255, 255, 0.2);
 }
 
-.footer-subscribe #mc-form label {
+.footer-feedback #gs-form textarea {
+  min-height: 10rem;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-feedback #gs-form input[type=submit] {
+  height: 3.6rem;
+  line-height: calc(3.6rem - .6rem);
+  padding: 0 2.5rem;
+  font-family: "mtr-regular", sans-serif;
+  font-size: 14px;
+  text-transform: none;
+  letter-spacing: normal;
+  margin: 0;
+}
+
+.footer-feedback #gs-form label {
   color: #ffffff;
   font-family: "mtr-regular", sans-serif;
   font-size: 1.3rem;
   padding: 0 2rem;
 }
 
-.footer-subscribe #mc-form label i {
+.footer-feedback #gs-form label i {
   padding-right: 6px;
 }
 
-.footer-subscribe #mc-form ::-webkit-input-placeholder {
+.footer-feedback #gs-form ::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.2);
 }
 
-.footer-subscribe #mc-form :-moz-placeholder {
+.footer-feedback #gs-form :-moz-placeholder {
   color: rgba(255, 255, 255, 0.2);
   /* Firefox 18- */
 }
 
-.footer-subscribe #mc-form ::-moz-placeholder {
+.footer-feedback #gs-form ::-moz-placeholder {
   color: rgba(255, 255, 255, 0.2);
   /* Firefox 19+ */
 }
 
-.footer-subscribe #mc-form :-ms-input-placeholder {
+.footer-feedback #gs-form :-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.2);
 }
 
-.footer-subscribe #mc-form .placeholder {
+.footer-feedback #gs-form .placeholder {
   color: rgba(255, 255, 255, 0.2) !important;
 }
 
@@ -3761,7 +3836,7 @@ footer ul a:visited {
   .footer-site-links {
     margin-bottom: 1.2rem;
   }
-  .footer-subscribe {
+  .footer-feedback {
     clear: both;
   }
 }
@@ -3814,7 +3889,7 @@ footer ul a:visited {
   }
   .footer-contact,
   .footer-site-links,
-  .footer-subscribe {
+  .footer-feedback {
     text-align: center;
   }
   .footer-bottom {
