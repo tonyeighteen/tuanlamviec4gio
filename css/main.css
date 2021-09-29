@@ -582,7 +582,7 @@ select {
   font-size: 1.5rem;
   line-height: 3rem;
   max-width: 100%;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   border-radius: 5px;
@@ -1902,7 +1902,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
     right: auto;
     left: 0;
     background-color: #111111;
-    padding: 95px 40px 54px;
+    padding: 90px 40px 40px;
   }
   #header-nav-wrap .header-main-nav {
     display: block;
@@ -3718,9 +3718,17 @@ footer ul a:visited {
   color: rgba(255, 255, 255, 0.2);
 }
 
+.footer-feedback #gs-form input[type="text"]:focus {
+  color: #ffffff;
+}
+
 .footer-feedback #gs-form textarea {
   min-height: 10rem;
   color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-feedback #gs-form textarea:focus {
+  color: #ffffff;
 }
 
 .footer-feedback #gs-form input[type=submit] {
@@ -3809,7 +3817,7 @@ footer ul a:visited {
   width: 60px;
   line-height: 60px;
   text-align: center;
-  background: black;
+  background: rgba(0, 0, 0, 0.7);
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
   text-transform: uppercase;
