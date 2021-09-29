@@ -1934,6 +1934,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   #header-nav-wrap .cta {
     display: block;
     padding: 0 20px;
+    margin: 0 40px;
   }
 }
 
