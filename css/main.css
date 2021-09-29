@@ -3586,7 +3586,7 @@ a:focus {
 
 @media only screen and (max-width: 600px) {
   #stepsix code {
-      padding: .3rem .6rem;
+      padding: .4rem .6rem .2rem .6rem;
   }
 }
 
