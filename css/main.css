@@ -1917,8 +1917,9 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
     border-bottom: 1px solid rgba(255, 255, 255, 0.03);
   }
   #header-nav-wrap .header-main-nav li a {
-    padding: 18px 0;
+    padding: 12px 0;
     line-height: 18px;
+    text-align: center;
   }
   #header-nav-wrap .cta {
     height: 42px;
